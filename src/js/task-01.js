@@ -1,14 +1,10 @@
 const categories = document.querySelector('#categories');
-const subCategories = categories.querySelectorAll('.item');
+const item = categories.querySelectorAll('.item');
+console.log('Number of categories:', item.length);
 
-const counter = parent => { return parent.childElementCount};
-const message = elements => {
-    elements.forEach(element => {
-        const firstElem = element.firstElementChild;
-        const secondElem = firstElem.nextElementSibling
-        console.log(`Category: ${firstElem.textContent}`);
-        console.log(`Elements: ${counter(secondElem)}`);
-    });
-};
-console.log(`Number of categories: ${counter(categories)}`);
-message(subCategories);
+
+item.forEach(function (params) {
+    console.log('Category:', params.firstElementChild.textContent);
+    const innerIlEl = params.querySelectorAll('li');
+    console.log('Elements:',innerIlEl.length);
+})
