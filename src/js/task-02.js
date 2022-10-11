@@ -14,19 +14,6 @@ const createEl = ingredients.map(item => {
   return ingredientsLiEl;
 });
 
-// console.log(createEl);
 const ingredientsEl = document.querySelector('#ingredients');
 ingredientsEl.append(...createEl);
 console.log(ingredientsEl);
-
-
-
-
-
-// const allIngridints=ingredients.map(text => {
-//    const el= document.createElement('li');
-//     el.textContent = text;
-//     el.classList.add("item");
-//     return el;
-//   });
-// addIngredientsList.append(...allIngridints)
