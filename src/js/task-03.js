@@ -21,7 +21,8 @@ galleryRel.insertAdjacentHTML(
   images.map(element =>
     `<li>
     <img src = "${element.url}"
-    alt = "${element.alt}">
+    alt = "${element.alt}"
+    width = 300>
     </li>`)
     .join(""));
 console.log(galleryRel);
